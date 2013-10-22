@@ -17,6 +17,11 @@
 
 #pragma mark - Managing the detail item
 
+- (IBAction)MostrarMensaje:(id)sender{
+    
+    etiqueta.text=@"Hola que ase";
+}
+
 - (void)setDetailItem:(id)newDetailItem
 {
     if (_detailItem != newDetailItem) {

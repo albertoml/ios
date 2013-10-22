@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate>{
+    
+    //ETIQUETA
+    IBOutlet UILabel *etiqueta;
+}
+
+- (IBAction) MostrarMensaje: (id) sender;
 
 @property (strong, nonatomic) id detailItem;
 
