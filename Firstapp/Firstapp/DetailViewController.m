@@ -19,7 +19,9 @@
 
 - (IBAction)MostrarMensaje:(id)sender{
     
-    etiqueta.text=@"Hola que ase";
+    self.view.backgroundColor= [UIColor redColor];
+    etiqueta.hidden=FALSE;
+    etiqueta.text=@"BOOM";
 }
 
 - (void)setDetailItem:(id)newDetailItem
@@ -50,6 +52,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    etiqueta.hidden=TRUE;
 }
 
 - (void)didReceiveMemoryWarning
